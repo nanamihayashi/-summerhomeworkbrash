@@ -1,0 +1,139 @@
+@charset "UTF-8";
+img{
+    border-radius: 15%;
+    width: 50%;
+    height:auto 
+   
+}
+
+body{
+    text-align: center;
+    background-color: antiquewhite;
+    scroll-behavior: smooth;
+    -webkit-animation: fadeIn 1.5s ease 0s 1 normal;
+    animation: fadeIn 1.5s ease 0s 1 normal;
+    font-size: clamp(0.4rem,2vw,1.2rem);
+    
+}
+.lace{
+   background-image: url("images/レース.jpg");
+    background-size: 100% auto;
+    background-position: top center;
+    background-repeat: no-repeat;
+    height: auto;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    aspect-ratio: 1920/200;
+}
+@keyframes fadeIn{
+      0% {opacity: 0}
+      100% {opacity: 1}
+    }
+@-webkit-keyframes fadeIn{
+      0% {opacity: 0}
+      100% {opacity: 1}
+    }
+
+.title{
+  line-height: 0.5;
+  margin-top: 100px;
+  padding: 20px;
+}
+.subtitle{
+  line-height: 1.0;
+  margin-bottom: 4
+  0px;
+}
+.separator{
+    bordor: none;
+    bordor-top: 1px solid saddlebrown;
+    margin: 15px 0;
+    }
+@media  screen and (max-width: 750px) {
+  .title{
+    margin-top: 10vh;
+  }
+  
+  
+}
+h1{
+     font-size:clamp(1rem,8vw,4rem);
+     font-family: "Kaisei Opti", serif;
+     white-space: nowrap;
+     font-weight: 400;
+     font-style: normal;
+     color: saddlebrown;
+     
+      }
+@media(min-width: 600px){
+      h1{
+     font-size: 4rem;
+     font-family: "Kaisei Opti", serif;
+     font-style: normal;
+     color: saddlebrown;
+     
+      }
+      main{
+        display: flex;
+      }
+    }
+      h2{
+     font-family: "Kaisei Opti", serif;
+     font-weight: 400;
+     font-style: normal;
+     color: saddlebrown;
+     line-height: 0.8;
+     
+      }
+      p{
+     font-family: "Kaisei Opti", serif;
+     font-weight: 400;
+     font-style: normal; 
+     color: saddlebrown; 
+     line-height: 0.8;
+      }
+    .eat {
+      font-family: "Kaisei Opti", serif;
+      background-color: antiquewhite;
+      color: saddlebrown; 
+      border: 10px rgb(255, 2, 2);
+      transition: background-color 0.3s;
+      font-size:clamp(0.1rem,2vw,0.8rem);
+      }
+      
+      .menu{
+        position: fixed;
+        top: 15px;
+        right: 5px;
+        display: flex;
+        gap:  2px;
+        background: saddlebrown;
+        padding: 4px;
+        border-radius: 4px ;
+        box-shadow: 0 0 5px rgba(0,0,0,0.2);
+        z-index: 1000;
+        font-size:clamp(0.1rem,2vw,1.2rem);
+      }
+      .menu a {
+        padding: 4px 6px;
+        color: antiquewhite;
+        text-decoration: none;
+        border-radius: 3px;
+              }
+      
+    html{
+      scroll-behavior: smooth;
+    }
+    .slide img{
+      max-width: 80%;
+      height: auto;
+    }
+    .is-active{
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+    
